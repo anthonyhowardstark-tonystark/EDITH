@@ -1,0 +1,8 @@
+{
+    "memory": true,
+    "dashboard": true,
+    "automation": true,
+    "voice": false,
+    "vision": false,
+    "livekit": false
+}

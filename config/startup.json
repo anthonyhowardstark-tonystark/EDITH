@@ -1,0 +1,6 @@
+{
+    "show_banner": true,
+    "run_diagnostics": true,
+    "animation": false,
+    "welcome_message": true
+}
