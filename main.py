@@ -1,7 +1,8 @@
 from core.version import *
 from core.engine import EdithEngine
 from core.startup import Startup
-
+from ui.screen import Screen
+from ui.terminal import Terminal
 
 def banner():
 
@@ -16,6 +17,12 @@ def banner():
 def main():
 
     Startup.boot()
+
+    Screen.show()
+
+    terminal = Terminal()
+
+    terminal.start()
 
     banner()
 

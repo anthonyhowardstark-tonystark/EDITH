@@ -1,5 +1,8 @@
+from unittest import loader
+
 from core.logger import Logger
 from core.manager import ModuleManager
+from core.module_loader import ModuleLoader
 
 
 class EdithEngine:
@@ -14,6 +17,10 @@ class EdithEngine:
         self.manager.register("Logger")
         self.manager.register("Module Manager")
         self.manager.register("Core Engine")
+
+        loader = ModuleLoader(self.manager)
+
+        loader.load_modules()
 
         print()
 
