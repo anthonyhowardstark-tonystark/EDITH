@@ -1,8 +1,5 @@
 from core.version import *
-from core.engine import EdithEngine
-from core.startup import Startup
-from ui.screen import Screen
-from ui.terminal import Terminal
+from ui.shell import Shell
 
 def banner():
 
@@ -14,25 +11,13 @@ def banner():
     print("=" * 60)
 
 
+from ui.shell import Shell
+
+
 def main():
 
-    Startup.boot()
-
-    Screen.show()
-
-    terminal = Terminal()
-
-    terminal.start()
-
-    banner()
-
-    engine = EdithEngine()
-
-    engine.start()
-
-    print()
-    print("Welcome to EDITH.")
-
+    shell = Shell()
+    shell.start()
 
 if __name__ == "__main__":
     main()

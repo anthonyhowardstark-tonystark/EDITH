@@ -12,13 +12,7 @@ class Startup:
 
         Banner.show()
 
-        engine = EdithEngine()
-        engine.start()
-
         Diagnostics.check()
 
         print("EDITH is Online.")
         print("Awaiting your command...")
-
-if config.get_startup().get("show_banner", True):
-    Banner.show()
