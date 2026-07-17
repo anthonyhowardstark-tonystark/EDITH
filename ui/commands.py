@@ -34,7 +34,7 @@ class CommandHandler:
             print("""
 Executive Digital Intelligence & Task Handler
 
-Developer : Anthony Howard Stark
+Developer : Raizul Haque Areeb Ahamed
 
 Language : Python
 
